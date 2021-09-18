@@ -1,1 +1,1 @@
-ps -ef | grep python3.*runserver | grep -v grep
+ps -ef | grep live-server | grep -v grep

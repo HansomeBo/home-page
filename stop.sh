@@ -1,1 +1,1 @@
-ps -ef | grep darkhomepage | grep -v grep | awk '{print $2}'| xargs kill -9
+ps -ef | grep live-server | grep -v grep | awk '{print $2}'| xargs kill -9
