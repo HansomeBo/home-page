@@ -1,0 +1,15 @@
+{
+    "name": "HansomeBo",
+    "short_name": "Bepd",
+    "theme_color": "#F5EFE1",
+    "background_color": "#000000",
+    "display": "standalone",
+    "start_url": "/?source=pwa",
+    "scope": "/",
+    "icons": [{
+            "src": "./files/dinosaur.jpeg",
+            "sizes": "192x192",
+            "type": "jpeg"
+        }
+    ]
+}
