@@ -1,0 +1,587 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+<!-- Basic Page Needs
+================================================== -->
+<title>HansomeBo</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Mobile Specific Metas
+================================================== -->
+<meta content="width=device-width,initial-scale=1" name="viewport">
+
+<!-- Favicons
+================================================== -->
+<link rel="shortcut icon" href="./images/dinosaur.jpeg">
+
+<!--fonts
+====================================================-->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700%7cOswald:400,700" rel="stylesheet">
+<!--stylesheets
+====================================================-->
+<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+<link rel="stylesheet" type="text/css" href="./css/simpletextrotator.css">
+
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="./js/jquery.min.js"></script> <!-- JQUERY -->
+</head>
+<body>
+
+<!--FRONT PAGE/ SPLASH SCREEN SECTION-->
+
+<div class="loading-screen"></div>
+
+<div id="frontpage">
+	<div class="shadow-img"></div>
+	<img src="./images/front-image.jpg" class="front-img img-responsive" alt ="Front-image"><!--IMAGE FOR FRONT SCREEN-->
+	<h1>Hansome <span class="invert">Bo</span></h1><!--PROFILE NAME-->
+	<h3 class="invert" style="margin-top: -10px; margin-bottom: 10px;">JAVA <span class="rotate">Developer, Designer</span></h3> <!--SUBTITLE IN PROFILE-->
+	<div class="frontclick"><img src="./images/click.png" alt="" class="img-responsive"><span class="pulse"></span></div>
+</div>
+<!--FRONT PAGE/ SPLASH SCREEN SECTION ENDS-->
+<!--container-->
+<div class="container">
+	<div id="content" class="row hidden">
+		<div class="col-sm-4">
+			<!--namecard-->
+			<div id="namecard" class="namecard">
+				<div class="shadow-img"></div>
+				<h1 class="maintitle">Hansome <span class="invert">Bo</span></h1><!--PROFILE NAME-->
+				<h3 class="invert sub-maintitle">JAVA
+					<span class="rotate">Developer, Designer</span><!--SUBTITLE AFTET NAME-->
+				</h3>
+				<img id="profile-img" class="profile-img transparent" style="object-fit: cover" src="./images/head3.png" alt="profile-image"><!--PROFILE IMAGE-->
+			</div><!--/#namecard-->
+			<!--menu-->
+			<div id="menu-container">
+				<!--PAGE MENU-->
+				<ul class="nav-menu no-padding">
+					<li class="nav-btn selected" title="Home" data-page="home">
+						<div class="hover-background"></div>
+						<span>Home</span><i class="fa fa-user fa-fw"></i>
+					</li>
+					<li class="nav-btn" id="resume-btn" title="Resume"  data-page="resume">
+						<div class="hover-background"></div>
+						<span>Resume</span><i class="fa fa-file-text fa-fw"></i>
+					</li>
+				   <li class="nav-btn folio-btn" data-filter="*" title="Portfolio" data-page="portfolio">
+						<div class="hover-background"></div>
+						<span>Portfolio</span><i class="fa fa-suitcase fa-fw"></i>
+					</li>
+
+					<li class="nav-btn" title="More" id="contact-link" data-page="contact">
+						<div class="hover-background"></div>
+						<span>More</span><i class="fa fa-paper-plane fa-fw"></i>
+					</li>
+					<li class="nav-btn" title="简历下载" id="file-download " data-page="">
+						<div class="hover-background"></div>
+						<a href="./profile/徐博简历_20200516.pdf"><span>简历下载</span></a><a href="./profile/徐博简历_20200516.pdf"><i class="fa fa-suitcase fa-fw" style="color: #d43f3a"></i></a>
+					</li>
+				</ul><!--/.nav-menu __PAGE MENU ENDS-->
+
+				<!--SOCIAL NAV MENU-->
+				<div class="social-menu-container">
+					<ul class="social-menu no-padding">
+						<li><a href="#" name="light_qq" onclick="openWindow(this)" title="782281190"><i class="fa fa-qq"></i></a></li>
+						<li><a href="#" name="light_weixin" onclick="openWindow(this)" title="zuishuaixubo"><i class="fa fa-wechat"></i></a></li>
+						<li><a href="https://github.com/HansomeBo" title="HansomeBo"><i class="fa fa-github"></i></a></li>
+						<li><a href="#" title="@HansomeBo"><i class="fa fa-weibo"></i></a></li>
+						<li><a href=""><i class="fa fa-phone"></i></a></li>
+					</ul>
+				</div><!--/.social-menu-container-->
+			</div><!--#menu-container-->
+		</div>
+		<div class="col-sm-8 page-segment">
+			<ul class="page-container no-padding">
+				<!--HOME/PROFILE PAGE-->
+				<li id="home" class="selected">
+					<div class="title-container hidden">
+						<div class="shadow-img"></div>
+						<h2 class="rotate-out">Welcome To <span class="invert"> Profile </span></h2><!--HOME TITLE-->
+					</div>
+					<div class="description hidden">
+						<div class="watermark-home"></div>
+
+						<div class="fade-text transparent">
+							<!--DESCRIPTION ON HOME-->
+							<div class="strong-text">Hello, I am <span>徐 博</span></div>
+							<div class="focus-text"><span>JAVA Developer & </span><span>System Designer</span></div>
+							<!--<p class="large-paragraph">I have three years experience as a finance system designer and developer.</p>-->
+							<p class="large-paragraph">喜欢新东西，喜欢有难度有挑战的工作，热爱编程，享受作为程序员解决问题的工作。 <strong>金融交易服务设计以及开发工作经验。</strong></p>
+							<!--DESCRIPTION ON HOME ENDS-->
+						</div>
+
+						<!--ALL PERSONAL DETAILS-->
+						<h3 class="personal-info-title title">个人简介</h3>
+						<ul class="personal-info">
+							<li class="rotate-out rotated"><label>Name</label><span>徐博</span></li>
+							<li class="rotate-out rotated"><label>Age</label><span>1994-07-18</span></li>
+							<li class="rotate-out rotated"><label>Email</label><span>hansomebo@foxmail.com</span></li>
+							<li class="rotate-out rotated"><label>Phone</label><span>18844063961</span></li>
+						</ul><!--/ul.personal-info-->
+					</div>
+				</li><!--/#home-->
+
+				<!--RESUME PAGE-->
+				<li id="resume" class="hidden">
+					<div class="title-container">
+						<div class="shadow-img"></div>
+						<h2 class="rotate-out rotated"><span class="invert">Resume Of</span> Hansome Bo </h2> <!--RESUME TITLE-->
+					</div>
+					<div class="description">
+
+						<div class='tabs tabs_animate'>
+							<!--RESUME TAB LISTS-->
+							<ul class='horizontal no-padding'>
+								<li><a href="#tab-1" class="icon-bg icon-skills"><div>教育&技能</div></a></li>
+								<li><a href="#tab-2" class="icon-bg icon-education"><div>工作经历</div></a></li>
+								<li><a href="#tab-3" class="icon-bg icon-employment"><div>项目经历</div></a></li>
+							</ul><!--RESUME TAB LISTS ENDS-->
+
+							<!--RESUME FIRST TAB/SKILL TAB DETAILS-->
+							<div id='tab-1'>
+                                <ul class="employment-class tab-cont">
+                                    <li>
+                                        <!--EMPLOYMENT INDIVIDUAL LIST-->
+                                        <h5>长春理工大学</h5>
+                                        <h4>软件工程 | 本科<span class="year">2013—2017</span></h4>
+
+                                        <p>● 在校期间与同学参加大创比赛，创建大学生兼职项目</p>
+                                        <p>● 阿里云服务器部署，校内三千用户注册</p>
+                                        <p>● 大学生创业比赛三等奖</p>
+
+                                    </li>
+                                    <li>
+                                        <!--EMPLOYMENT INDIVIDUAL LIST-->
+                                        <h5>主要技能</h5>
+
+                                        <p>技术储备：</p>
+                                        <p>Spring、Spring Boot、Spring Cloud、Rabbit MQ、MyBatis、Redis、MySQL、Oracle</p>
+                                        <p>微服务体系：</p>
+                                        <p>熟悉微服务体系的搭建、网关路由、熔断降级、负载均衡、分布式事务</p>
+                                        <p>贷款业务：</p>
+                                        <p>乐于和业务沟通，学习业务概念，熟悉贷款相关产品、费用、协议、交易的流程和概念</p>
+                                        <p>系统调优：</p>
+                                        <p>微服务体系中节点拆分、边界划分，交易幂等保证，柔性事务保证，长流程异步化处理</p>
+                                    </li>
+                                </ul>
+                            </div><!--RESUME FIRST TAB/SKILL TAB DETAILS ENDS-->
+
+							<!--RESUME SECOND TAB/EDUCATION TAB DETAILS-->
+							<div id='tab-2'>
+								<h3 class="title">工作经历</h3>
+								<ul class="education-class">
+									<ul class="employment-class tab-cont">
+										<li>
+										<!--EMPLOYMENT INDIVIDUAL LIST-->
+										<h4>Manager <span class="year">2014 - 2005</span></h4>
+										<h5>Consectetur adipiscing</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing Vivamus sit Vivamus sit. Vivamus sit.. consectetur adipiscing Vivamus sit.</p><!--EMPLOYMENT LIST DETAILS-->
+									</li>
+										<li>
+											<!--EMPLOYMENT INDIVIDUAL LIST-->
+											<h5>首金金融</h5>
+											<h4>资产端开发组长<span class="year">2017 - 至今</span></h4>
+
+											<p><b>内容：资产端开发组长</b></p>
+											<p>● 系统设计</p>
+											<p>● 业务和技术结合，业务需求转化</p>
+											<p>● 微服务拆分、领域划分</p>
+											<p>● 技术方案选型和落地</p>
+
+											<p><b>业绩：完成核心交易系统由单体服务到微服务的升级</b></p>
+											<p>● 系统设计：资产核心交易系统、产品中心、费用中心、任务调度中心、对账中心的设计和技术方案落地</p>
+											<p>● 微服务化：细化和明确领域边界，拆分下沉服务，解决微服务化过程中的技术问题</p>
+											<p>● 系统开发：参与核心交易系统的开发、对同事开发代码进行Review和代码规范监督</p>
+											<p>● 需求转化：对接业务，结合技术，转化为领域设计语言，和团队讨论和理解</p>
+											<p>● 方案落地：技术方案选型和落地</p>
+											<p>● 团队协作：协调开发任务，组织团队讨论技术方案的利弊并完善，帮助团队成员解决问题和协调资源</p>
+
+										</li>
+										<li>
+											<!--EMPLOYMENT INDIVIDUAL LIST-->
+											<h5>东方国信</h5>
+											<h4> 核心开发 <span class="year">2016 - 2017</span></h4>
+
+
+											<p>内容：核心开发</p>
+											<p>● 非结构化数据结构化处理分析</p>
+											<p>● 大批量数据快速检索</p>
+											<p>● 数据可视化展示</p><!--EMPLOYMENT LIST DETAILS-->
+										</li>
+									</ul>
+								</ul>
+							</div><!--RESUME SECOND TAB/EDUCATION TAB DETAILS ENDS-->
+							<!--RESUME THIRD TAB/EMPLYMENT TAB DETAILS ENDS-->
+							<div id='tab-3'>
+								<h3 class="title">项目经历</h3>
+								<ul class="employment-class tab-cont">
+									<li>
+										<!--EMPLOYMENT INDIVIDUAL LIST-->
+										<h4>Manager <span class="year">2014 - 2005</span></h4>
+										<h5>Consectetur adipiscing</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing Vivamus sit Vivamus sit. Vivamus sit.. consectetur adipiscing Vivamus sit.</p><!--EMPLOYMENT LIST DETAILS-->
+									</li>
+									<li>
+										<!--EMPLOYMENT INDIVIDUAL LIST-->
+										<h5>首金新核心交易系统</h5>
+										<h4> 开发组长&系统设计 <span class="year">2018.03—2018.08</span></h4>
+										<p>技术选型：</p>
+										<p>SpringCloud + MySQL + TCC + Redis + RabbitMQ + Swagger</p>
+										<p>Eureka + Config + Hystrix + Ribbon + ZipKin + Monitor</p>
+										<p>服务简介：</p>
+										<p>1. 费用服务：针对费用计费实现费用分层分段，费用因子灵活配置，按日计费。</p>
+										<p>2. 产品服务：抽象产品的公共属性，使用纵表结构灵活存储产品属性，统一平台产品，赋予产品定价和试算的能力。</p>
+										<p>3. 交易服务：异步流式处理，提高并发量和吞吐量，在保证幂等的前提下，对关键节点进行自动重试，降低失败率。</p>
+										<p>4. 协议服务：抽象借贷规则，统一管理平台协议，异步事件保证处理效率，归档验证保证协议数据的准确性和一致性。</p>
+										<p>技术要点：</p>
+										<p>1. 使用SpringCloud实现微服务的拆分，细化服务职责</p>
+										<p>2. 对MySQL数据库进行分库分表，减轻数据库压力</p>
+										<p>3. 使用RabbitMQ进行消息异步处理，提升服务并发处理能力</p>
+										<p>4. 使用TCC实现分布式事务</p>
+										<p>5. 链路跟踪、配置统一管理</p>
+										<p>6. 核心交易服务实现异常自治理</p>
+
+										<p>业绩：服务由1.0到2.0的彻底升级</p>
+										<p>1. 将原本单体大服务按领域拆分为微服务</p>
+										<p>2. 大大提高交易并发处理能力，异常自治理能力，快速迭代更新能力</p>
+
+										<p>项目链接：www.shoujinwang.com</p>
+										<!--EMPLOYMENT LIST DETAILS-->
+									</li>
+									<li>
+										<!--EMPLOYMENT INDIVIDUAL LIST-->
+										<h5>智享方案债转系统</h5>
+										<h4> 核心开发 <span class="year">2017.12—2018.03</span></h4>
+
+										<p>技术选型：</p>
+										<p>Spring Boot + Eureka + Config + FeignClient + MySQL + RabbitMQ</p>
+										<p>描述：</p>
+										<p>● 账户、银行、用户、资产、投资、任务服务独立拆分</p>
+										<p>● 各服务资源独立，通过RPC调用进行通信</p>
+										<p>● 分布式事务保证核心交易的分布式最终一致性</p>
+
+										<p>业绩：</p>
+										<p>● 提升平台的交易量和交易成功率</p>
+										<p>● 服务拆分，快速开发，功能快速迭代更新</p>
+									</li>
+									<li>
+										<!--EMPLOYMENT INDIVIDUAL LIST-->
+										<h5>⾦融平台对账系统</h5>
+										<h4> 系统设计＆＆开发 <span class="year">2017.07—2018.02</span></h4>
+
+										<p>技术选型：</p>
+										<p>SpringBatch + Oracle + Quartz</p>
+										<p>描述：</p>
+										<p>● 全平台交易对账</p>
+										<p>● 银⾏和本地对账</p>
+										<p>● 资⾦、资产、余额对账</p>
+										<p>业绩：</p>
+										<p>● 批处理分批、分步将对账时间⼤⼤缩减</p>
+										<p>● ⾃动化对账，及时找出错账，漏单等问题</p>
+										<p>● 细致了解了全平台的交易业务流程</p>
+										<p>● 通过对账核对出来的差异，进⼀步定位各服务的问题点并向对应开发提出修改意见</p>
+									</li>
+									<li>
+										<!--EMPLOYMENT INDIVIDUAL LIST-->
+										<h5>文本管理系统</h5>
+										<h4> 核心开发 <span class="year">2016.08—2017.04</span></h4>
+
+										<p>描述：</p>
+										<p>1.使用struts2和mybatis框架进行系统编程，使用redis内存数据库加快搜索，使用Oracle进行数据存储。</p>
+										<p>2.对文本进行分析，进行聚类分类，命名实体识别，导语抽取等。</p>
+										<p>3.使用echarts图形化界面将数据通过页面呈现给用户。</p>
+										<p>4.使用ElasticSearch提高搜索准确度和全文本搜索速度。</p>
+										<p>5.使用arcgis进行地图编辑。</p>
+
+										<p>业绩：</p>
+										<p>1.对Oracle有了更细致的了解，面对一些常见问题有了更多经验。</p>
+										<p>2.在加速搜索速度方面有了更多解决方案。例如redis和ElasticSearch。</p>
+										<p>3.通过和客户交流，了解到真实项目中编程人员和客户有着一定代沟，所以要用耐心向客户解释。</p>
+										<p>4.项目中经常遇到没使用过的技术，所以要不惧挑战，随时准备学习新东西。</p>
+									</li>
+								</ul>
+							</div><!--RESUME THIRD TAB/EMPLYMENT TAB DETAILS ENDS-->
+						</div>
+					</div>
+				</li>
+				<!--/#resume-->
+				<!--PORTFOLIO PAGE-->
+				<li id="portfolio" class="hidden">
+					<div class="title-container">
+						<div class="shadow-img"></div>
+						<h2 class="rotate-out rotated">Portfolio</h2> <!--PORTFOLIO TITLE-->
+					</div>
+
+					<!--PORTFOLIO CATEGORY LIST-->
+					<div class="abs-child">
+						<ul class="button-group filters-button-group">
+							<li class="button is-checked" data-filter="*">Show All</li>
+							<li class="button" data-filter=".photography">Photography</li>
+							<li class="button" data-filter=".commercial">Commercial</li>
+							<li class="button" data-filter=".potrait">Potrait</li>
+						</ul><!--/.button-group filters-button-group-->
+					</div>
+
+					<div class ="sec-porfolio description">
+						<div class="row">
+							<!--PORTFOLIO ITEM CONTAINER-->
+							<div class="folio-container">
+								<ul class="folio-item"><!--PORTFOLIO INDIVIDAUAL ITEM-->
+									<li class="view view-first photography">
+										<img src="./images/folio/logs.jpg" alt="logs" /><!--PORTFOLIO INDIVIDAUAL ITEM IMAGE-->
+										<div class="mask">
+											 <h2>woodsman</h2> <!--PORTFOLIO INDIVIDAUAL ITEM TITLE-->
+											<!-- Button trigger modal -->
+											<a role="button" class="info" data-toggle="modal" data-target="#myModal">Read More</a><!--PORTFOLIO INDIVIDAUAL ITEM MODAL LINK BY 'data-target'-->
+										 </div>
+									</li>
+									<li class="view view-second commercial"><!--PORTFOLIO INDIVIDAUAL ITEM-->
+									  <img src="./images/folio/book.jpg" alt="book" /><!--PORTFOLIO INDIVIDAUAL ITEM IMAGE-->
+										<div class="mask"></div>
+										<div class="content">
+											<h2>Hover Style #2</h2><!--PORTFOLIO INDIVIDAUAL ITEM TITLE-->
+											<a role="button" class="info" data-toggle="modal" data-target="#myModal2">Read More</a><!--PORTFOLIO INDIVIDAUAL ITEM MODAL LINK BY 'data-target'-->
+										</div>
+									</li>
+									<li class="view view-tenth photography"> <!--PORTFOLIO INDIVIDAUAL ITEM-->
+										 <img src="./images/folio/beach.jpg" alt="beach" /> <!--PORTFOLIO INDIVIDAUAL ITEM IMAGE-->
+										 <div class="mask">
+											 <h2>New York</h2><!--PORTFOLIO INDIVIDAUAL ITEM TITLE-->
+											 <a role="button" class="info" data-toggle="modal" data-target="#myModal5">Read More</a>  <!--PORTFOLIO INDIVIDAUAL ITEM MODAL LINK BY 'data-target'-->
+										 </div>
+									</li>
+									<li class="view view-second commercial"><!--PORTFOLIO INDIVIDAUAL ITEM-->
+									  <img src="./images/folio/guy.jpg" alt="guy" /><!--PORTFOLIO INDIVIDAUAL ITEM IMAGE-->
+										<div class="mask"></div>
+										<div class="content">
+											<h2>Image Name</h2><!--PORTFOLIO INDIVIDAUAL ITEM TITLE-->
+											<a role="button" class="info" data-toggle="modal" data-target="#myModal3">Read More</a><!--PORTFOLIO INDIVIDAUAL ITEM MODAL LINK BY 'data-target'-->
+										</div>
+									</li>
+
+									<li class="view view-first potrait"><!--PORTFOLIO INDIVIDAUAL ITEM-->
+										 <img src="./images/folio/illustration.jpg" alt="illustration" /><!--PORTFOLIO INDIVIDAUAL ITEM IMAGE-->
+										 <div class="mask">
+											 <h2>New York</h2>
+											 <a role="button" class="info" data-toggle="modal" data-target="#myModal4">Read More</a> <!--PORTFOLIO INDIVIDAUAL ITEM MODAL LINK BY 'data-target'-->
+										 </div>
+									</li>
+									<li class="view view-second photography"><!--PORTFOLIO INDIVIDAUAL ITEM-->
+									  <img src="./images/folio/guy.jpg" alt="guy" /><!--PORTFOLIO INDIVIDAUAL ITEM IMAGE-->
+										<div class="mask"></div>
+										<div class="content">
+											<h2>Image Name</h2><!--PORTFOLIO INDIVIDAUAL ITEM TITLE-->
+											<a role="button" class="info" data-toggle="modal" data-target="#myModal3">Read More</a><!--PORTFOLIO INDIVIDAUAL ITEM MODAL LINK BY 'data-target'-->
+										</div>
+									</li>
+									<li class="view view-tenth potrait"> <!--PORTFOLIO INDIVIDAUAL ITEM-->
+										<img src="./images/folio/logs.jpg" alt="logs" /> <!--PORTFOLIO INDIVIDAUAL ITEM IMAGE-->
+										<div class="mask">
+											 <h2>woodsman</h2><!--PORTFOLIO INDIVIDAUAL ITEM TITLE-->
+											 <a role="button" class="info" data-toggle="modal" data-target="#myModal">Read More</a> <!--PORTFOLIO INDIVIDAUAL ITEM MODAL LINK BY 'data-target'-->
+										 </div>
+									</li>
+
+									<li class="view view-tenth commercial"><!--PORTFOLIO INDIVIDAUAL ITEM-->
+										 <img src="./images/folio/beach.jpg" alt="beach" /> <!--PORTFOLIO INDIVIDAUAL ITEM IMAGE-->
+										 <div class="mask">
+											 <h2>New York</h2><!--PORTFOLIO INDIVIDAUAL ITEM TITLE-->
+											 <a role="button" class="info" data-toggle="modal" data-target="#myModal5">Read More</a> <!--PORTFOLIO INDIVIDAUAL ITEM MODAL LINK BY 'data-target'-->
+										 </div>
+									</li>
+
+
+								</ul>
+							</div>
+							<!--PORTFOLIO ITEM CONTAINER ENDS-->
+						</div>
+					</div>
+				</li><!--/#portfolio-->
+
+				<!--CONTACT PAGE-->
+				<li id="contact" class="hidden">
+					<div class="title-container" >
+						<div class="shadow-img"></div>
+					   <h2 class="rotate-out rotated">More</h2><!--CONTACT PAGE TITLE-->
+					</div>
+					<div class="description">
+						<div class="row">
+							<div class="col-sm-12">
+                                <ul class="employment-class tab-cont">
+                                    <li>
+                                        <h5>资格证书</h5>
+                                        <p>英语专业四级 大学英语六级</p>
+                                    </li>
+                                    <li>
+                                        <h5>所获奖励</h5>
+                                        <p>● 大学生创业比赛三等奖</p>
+                                        <p>● 因新核心项目所做出的突出贡献，被评为年度优秀员工</p>
+                                    </li>
+                                    <li>
+                                        <h5>期望职位</h5>
+                                        <p>Java  北京  20-30K  互联网·银行·互联网金融</p>
+                                    </li>
+                                </ul>
+							</div>
+
+							<div class="col-sm-5">
+								<!--CONTACT DESCRIPTION-->
+								<h3 class="title">Contact Info</h3>
+								<h6 class="sm-title"><span class="address-icon"><i class="fa fa-map-marker"></i></span>Shandong Linyi</h6>
+								<h6 class="sm-title"><span class="address-icon"><i class="fa fa-phone"></i></span>18844063961</h6>
+								<h6 class="sm-title"><span class="address-icon"><i class="fa fa-envelope"></i></span>hansomebo@foxmail.com</h6>
+								<!--/CONTACT DESCRIPTION ENDS-->
+							</div>
+							<div class="col-sm-7">
+							</div>
+
+						</div>
+					</div>
+				</li><!--/#contact-->
+			</ul>
+
+			<div class="row mobile-nav-container">
+				<!--SOCIAL NAV FOR MOBILE-->
+				<ul class="mobile-social no-padding">
+					<li>Connect With Me</li>
+					<li><a href="./images/hansomebo_qq.jpeg" name="light_qq"  title="782281190"><i class="fa fa-qq"></i></a></li>
+					<li><a href="./images/wechat_hansomebo.jpeg" name="light_weixin" title="zuishuaixubo"><i class="fa fa-wechat"></i></a></li>
+					<li><a href="https://github.com/HansomeBo" title="HansomeBo"><i class="fa fa-github"></i></a></li>
+					<li><a href="#" title="@HansomeBo"><i class="fa fa-weibo"></i></a></li>
+				</ul><!--/.mobile-social-->
+			</div>
+		</div><!--/.page-segment -->
+	</div>
+</div><!--/.container -->
+<!--PORTFOLIO IMAGE MODAL LIST-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">Modal title</h4><!--PORTFOLIO IMAGE TITLE-->
+			</div>
+			<div class="modal-body">
+				<img src="./images/folio/logs.jpg" class="img-responsive" alt="modal-image"><!--PORTFOLIO MODAL IMAGE-->
+			</div>
+			<div class="modal-footer">
+				<div class="mf-content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis temporibus fuga sit explicabo blanditiis voluptate iste vero quia impedit? Iusto illo voluptas est praesentium veritatis magni, pariatur laboriosam voluptatem inventore.</p>
+				</div>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel2">Hover Style</h4><!--PORTFOLIO IMAGE TITLE-->
+			</div>
+			<div class="modal-body">
+				<img src="./images/folio/book.jpg" class="img-responsive" alt="modal-image"><!--PORTFOLIO MODAL IMAGE-->
+			</div>
+			<div class="modal-footer">
+				<div class="mf-content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel sapiente, odit, illo saepe voluptate eos enim eius autem cumque ab, soluta dolor tempore inventore eligendi maxime voluptas pariatur explicabo blanditiis?</p>
+				</div>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel3">Hover Style</h4><!--PORTFOLIO IMAGE TITLE-->
+			</div>
+			<div class="modal-body">
+				<img src="./images/folio/guy.jpg" class="img-responsive" alt="modal-image"><!--PORTFOLIO MODAL IMAGE-->
+			</div>
+			<div class="modal-footer">
+				<div class="mf-content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ratione quae, alias at. Reprehenderit, ut quis corporis laudantium, laborum sed omnis qui perspiciatis explicabo. Ipsum culpa aspernatur dolorem. Amet, quis.</p>
+				</div>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel4">Hover Style</h4><!--PORTFOLIO IMAGE TITLE-->
+			</div>
+			<div class="modal-body">
+				<img src="./images/folio/illustration.jpg" class="img-responsive" alt="modal-image"><!--PORTFOLIO MODAL IMAGE-->
+			</div>
+			<div class="modal-footer">
+				<div class="mf-content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ab id unde veniam error et iste ut aspernatur accusantium porro molestiae voluptatibus rem, tempore inventore ad minus soluta praesentium magni?</p>
+				</div>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel5">Hover Style</h4><!--PORTFOLIO IMAGE TITLE-->
+			</div>
+			<div class="modal-body">
+				<img src="./images/folio/beach.jpg" class="img-responsive" alt="modal-image"><!--PORTFOLIO MODAL IMAGE-->
+			</div>
+			<div class="modal-footer">
+				<div class="mf-content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam amet placeat porro, maxime corrupti laboriosam, quod nulla perferendis esse ipsa atque deleniti. Magni molestias, nemo illum eos, exercitationem neque incidunt.</p>
+				</div>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade" id="subscribe_modal_1" tabindex="-1" role="dialog" aria-labelledby="subscribe_modal_1" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h2 class="modal-title">Thank You</h2><!--PORTFOLIO IMAGE TITLE-->
+			</div>
+			<div class="modal-body">
+				<div class="text-center mail-sucsess"><h3> <span>your mail has been sent</span></h3></div>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!--javascript files
+=============================================================-->
+<script type="text/javascript" src="./js/jQueryTween-aio-min.js"></script> <!-- JQUERY Tween Plugin -->
+<script type="text/javascript" src="./js/jquery.tabslet.min.js"></script> <!-- JQUERY Tab plugin-->
+<script type="text/javascript" src="./js/progressbar.min.js"></script> <!-- JQUERY Progressbar Plugin-->
+<script type="text/javascript" src="./js/jquery.simple-text-rotator.min.js"></script> <!-- JQUERY Text Rotator-->
+<script type="text/javascript" src="./js/bootstrap.min.js"></script> <!-- Bootstrap file-->
+<script type="text/javascript" src='./js/isotope.pkgd.min.js'></script>
+<script type="text/javascript" src="./js/custom.js"></script>
+
+</body>
+</html>
