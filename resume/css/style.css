@@ -4,7 +4,7 @@
 /*----------------------------------------------*/
 body {
 	font-family: 'Open Sans', sans-serif;
-    background: url(../imagesmain-bg.jpg) center bottom;
+    background: url(../images/main-bg.jpg) center bottom;
     background-size: cover;
     background-color: #E8E8E8;
     margin: 0px;
@@ -32,7 +32,7 @@ body {
 	padding-bottom: 15px;
 }
 
-#content {		
+#content {
 	position: relative;
 	min-height: 620px;
 }
@@ -255,22 +255,22 @@ body {
 	/* Typography */
 /*-------------------------------------------------------*/
 h1 {
-	font-size: 45px; 
+	font-size: 45px;
 }
 h2 {
-	font-size: 30px; 
+	font-size: 30px;
 }
 h3 {
-	font-size: 24px; 
+	font-size: 24px;
 }
 h4 {
-	font-size: 15px; 
+	font-size: 15px;
 }
 h5 {
-	font-size: 13px; 
+	font-size: 13px;
 }
 h6 {
-	font-size: 12px; 
+	font-size: 12px;
 }
 h3.title {
 	font-size: 21px;
@@ -296,22 +296,22 @@ span.year{color: #F9BF3B; float: right;}
 .btn{padding: 2px 25px; border-radius: 0px; }
 
 .btn-success{
-	background: #f4d03f; 
-	border-color: #f4d03f; 
-	width: 100%; 
-	color: #000000; 
+	background: #f4d03f;
+	border-color: #f4d03f;
+	width: 100%;
+	color: #000000;
 	font-family: 'Oswald', sans-serif;
 	font-size: 18px;
 }
-.btn-success.active, 
-.btn-success.focus, 
-.btn-success:active, 
-.btn-success:focus, 
-.btn-success:hover, 
+.btn-success.active,
+.btn-success.focus,
+.btn-success:active,
+.btn-success:focus,
+.btn-success:hover,
 .open>.dropdown-toggle.btn-success {
     opacity: .9;
-    background: #f4d03f; 
-    border-color: #f4d03f; 
+    background: #f4d03f;
+    border-color: #f4d03f;
 }
 .form-control:focus{
 	border-color: #888888;
@@ -329,8 +329,8 @@ span.year{color: #F9BF3B; float: right;}
 	padding: 20px;
 }
 .modal-header {
-	background-color: #111111; 
-	border-bottom: none; 
+	background-color: #111111;
+	border-bottom: none;
 	padding: 13px 20px 22px;
 }
 .modal-footer {
@@ -378,12 +378,12 @@ span.year{color: #F9BF3B; float: right;}
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
-	background: url('../imagesPreloader_7.gif') center no-repeat #F5D76E;
+	background: url('../images/Preloader_7.gif') center no-repeat #F5D76E;
 }
 
 #frontpage{
 	position: relative;
-	width: 550px;		
+	width: 550px;
 	background-color: #666;
 	text-align: right;
 	padding: 15px;
@@ -396,8 +396,8 @@ span.year{color: #F9BF3B; float: right;}
 	min-height: 150px;
 	background-color: #f4d03f;
 	text-align: center;
-	position: relative;		
-}	
+	position: relative;
+}
 
 /*-------------------------------------------------------*/
 	/* Namecard Design Section */
@@ -430,7 +430,7 @@ span.year{color: #F9BF3B; float: right;}
 	-khtml-opacity: 1.0;
 	-moz-opacity: 1.0; 	/* Older than Firefox 0.9 */
 	filter: alpha(opacity=100); /* This works in IE 8 & 9 too, but also 5, 6, 7 */
-	
+
    transition: opacity 1s ease-in-out;
    -moz-transition: opacity 1s ease-in-out;
    -webkit-transition: opacity 1s ease-in-out;
@@ -456,7 +456,7 @@ span.year{color: #F9BF3B; float: right;}
 
 ul.nav-menu li {
 	position: relative;
-	padding: 12px 15px;		
+	padding: 12px 15px;
 	width: 100%;
 	color: #111111;
 	border-bottom: 1px solid #e1c03a;
@@ -486,7 +486,7 @@ ul.nav-menu li {
 	transition: top 0.5s, left 0.5s;
 }
 
-ul.nav-menu li:hover{		
+ul.nav-menu li:hover{
 	border-bottom-color: #111111;
 	color: #f4d03f;
 }
@@ -510,7 +510,7 @@ ul.nav-menu li span {
 	text-transform: uppercase;
 }
 
-ul.nav-menu li:hover span, 
+ul.nav-menu li:hover span,
 ul.nav-menu li.selected span {
 	border-right: 2px solid #f4d03f;
 }
@@ -529,7 +529,7 @@ ul.nav-menu li.selected span {
 	color: #111111;
 }
 
-.social-menu {		
+.social-menu {
 	display: inline-block;
 	float: none;
 	font-size: 18px;
@@ -545,7 +545,7 @@ ul.nav-menu li.selected span {
 .social-menu li{
 	float: left;
 	width: 40px;
-	height: 40px;		
+	height: 40px;
 	text-align: center;
 	border-radius:  20px;
 	cursor:pointer;
@@ -602,7 +602,7 @@ h1.maintitle {
 	position: relative;
 	background-color: #fff;
 	padding: 15px 30px;
-	overflow: hidden;		
+	overflow: hidden;
 }
 
 .description p {
@@ -656,7 +656,7 @@ h1.maintitle {
 	font-weight: 600;
 }
 
-.page-container .selected{display: block;}	
+.page-container .selected{display: block;}
 
 /*-------------------------------------------------------*/
 	/* Home styles	 */
@@ -668,7 +668,7 @@ h1.maintitle {
 	position: absolute;
 	bottom: 0px;
 	right: 15px;
-	background: url(../imagesprofile.png) no-repeat;
+	background: url(../images/profile.png) no-repeat;
 	background-size: contain;
 	background-position: right;
 }
@@ -721,7 +721,7 @@ ul.personal-info li {
 .tabs .horizontal{
 	margin: 30px -30px;
 	margin-top: 0px;
-	padding: 10px 0px; 
+	padding: 10px 0px;
 	display: block;
 	min-height: 50px;
 	position: relative;
@@ -747,20 +747,20 @@ ul.personal-info li {
 	border-right: none;
 }
 .icon-bg {
-	background-image: url(../imagesresume/skills.png);
+	background-image: url(../images/resume/skills.png);
 	background-position: left;
 	-webkit-background-size: contain;
 	background-size: contain;
 	background-repeat: no-repeat;
 }
 .icon-skills {
-	background-image: url(../imagesresume/icon_01.png);
+	background-image: url(../images/resume/icon_01.png);
 }
 .icon-education {
-	background-image: url(../imagesresume/icon_02.png);
+	background-image: url(../images/resume/icon_02.png);
 }
 .icon-employment {
-	background-image: url(../imagesresume/icon_03.png);
+	background-image: url(../images/resume/icon_03.png);
 }
 .tabs .horizontal li a:hover, .tabs .horizontal li.active a{
 	background-color: #f4d03f;
